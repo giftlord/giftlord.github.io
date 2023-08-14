@@ -34,7 +34,7 @@
           class="navbar-brand"
           href="https://www.instagram.com/giftcleverson22/"
           target="_blank"
-          >Giftlord voerman</a
+          ><img class="profil" src="img/profil/gift.jpg">Giftlord voerman</a
         >
         <button
           class="navbar-toggler"
@@ -94,7 +94,7 @@
         class="container"
         data-aos="zoom-in"
         data-aos-offset="300"
-        data-aos-duration="1000"
+        data-aos-duration="300"
       >
         <div class="row text-center mb-3">
           <div class="col">
@@ -105,7 +105,7 @@
           <div class="about col-md-4">
             <p>
               Nama saya giftlord voerman Saya seorang mahasiswa fakultas teknik
-              jurusan elektro program studi informatika✋<span
+              jurusan elektro program studi informatika hallo semuanya✋<span
                 class="typing"
               ></span>
             </p>
@@ -228,64 +228,107 @@
 
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/gambar 10.jpg" alt="gambar10" class="img-fluid gallery-img">
+              <img
+                src="img/gallery/gambar 10.jpg"
+                alt="gambar10"
+                class="img-fluid gallery-img"
+              />
             </a>
           </div>
 
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/gambar 2.jpg" alt="gambar2" class="img-fluid gallery-img">
+              <img
+                src="img/gallery/gambar 2.jpg"
+                alt="gambar2"
+                class="img-fluid gallery-img"
+              />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/gambar 3.jpg" alt="gambar3" class="img-fluid gallery-img">
-            </a>
-          </div>
-
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/gambar 4.jpg" alt="gambar4" class="img-fluid gallery-img">
-            </a>
-          </div>
-
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/gambar 5.jpg" alt="gambar5" class="img-fluid gallery-img">
+              <img
+                src="img/gallery/gambar 3.jpg"
+                alt="gambar3"
+                class="img-fluid gallery-img"
+              />
             </a>
           </div>
 
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/gambar 6.jpg" alt="gambar6" class="img-fluid gallery-img">
+              <img
+                src="img/gallery/gambar 4.jpg"
+                alt="gambar4"
+                class="img-fluid gallery-img"
+              />
             </a>
           </div>
 
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/gambar 7.jpg" alt="gambar7" class="img-fluid gallery-img">
+              <img
+                src="img/gallery/gambar 5.jpg"
+                alt="gambar5"
+                class="img-fluid gallery-img"
+              />
             </a>
           </div>
 
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/gambar 8.jpg" alt="gambar8" class="img-fluid gallery-img">
+              <img
+                src="img/gallery/gambar 6.jpg"
+                alt="gambar6"
+                class="img-fluid gallery-img"
+              />
             </a>
           </div>
 
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/gambar 9.jpg" alt="gambar9" class="img-fluid gallery-img">
+              <img
+                src="img/gallery/gambar 7.jpg"
+                alt="gambar7"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/gallery/gambar 8.jpg"
+                alt="gambar8"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/gallery/gambar 9.jpg"
+                alt="gambar9"
+                class="img-fluid gallery-img"
+              />
             </a>
           </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f3f4f5"
+          fill-opacity="1"
+          d="M0,224L30,218.7C60,213,120,203,180,213.3C240,224,300,256,360,261.3C420,267,480,245,540,224C600,203,660,181,720,165.3C780,149,840,139,900,138.7C960,139,1020,149,1080,154.7C1140,160,1200,160,1260,170.7C1320,181,1380,203,1410,213.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- akhir gallery -->
 
     <!-- contack -->
     <section id="contack">
-      <div class="container">
+      <div class="container" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>Contack Me</h2>
@@ -384,8 +427,7 @@
           class="text-white fw-bold"
           >Giftlord Voerman</a
         >
-        <i class="bi bi-heart text-dark"></i>
-      </p>
+        <i class="bi bi-controller"></i></p>
     </footer>
     <!-- akhir footer -->
     <script
@@ -396,14 +438,13 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
 
-      const galleryImage = document.querySelectorAll('.gallery-img')
-
-      galleryImage.forEach((img,i)=>{
-        img.dataset.aos = 'zoom-in-up'
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "zoom-in-up";
         img.dataset.aosDelay = i * 100;
         img.dataset.aosDuration = 500;
-      })
+      });
 
       AOS.init({});
     </script>
@@ -412,13 +453,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
 
-
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead',{duration:1.5, delay: 1, text:'Mahasiswa | Pelajar'})
-      gsap.from('.jumbotron img', {duration: 1.5, rotateY: 360, opacity: 0,});
-      gsap.from('.navbar',{duration:2, y: '-100%', opacity:0, ease: 'bounce'})
-      gsap.from('.display-4',{duration:1.2, x: -100, opacity:0, ease:'slow'})
+      gsap.to(".lead", {
+        duration: 1.5,
+        delay: 1,
+        text: "Mahasiswa | Pelajar",
+      });
+      gsap.from(".jumbotron img", { duration: 1.5, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", {
+        duration: 2,
+        y: "-100%",
+        opacity: 0,
+        ease: "bounce",
+      });
+      gsap.from(".display-4", {
+        duration: 1.2,
+        x: -100,
+        opacity: 0,
+        ease: "slow",
+      });
     </script>
 
     <script>
